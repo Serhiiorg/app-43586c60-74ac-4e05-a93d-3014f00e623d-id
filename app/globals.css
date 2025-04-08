@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base */
+    --background: 34 30% 96%;
+    --foreground: 200 15% 20%;
+
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 200 15% 20%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 15% 20%;
+
+    /* Primary */
+    --primary: 178 12% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary */
+    --secondary: 25 25% 85%;
+    --secondary-foreground: 200 15% 20%;
+
+    /* Muted */
+    --muted: 25 20% 92%;
+    --muted-foreground: 200 10% 40%;
+
+    /* Accent */
+    --accent: 184 13% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border */
+    --border: 25 25% 85%;
+    --input: 25 25% 85%;
+    --ring: 178 12% 55%;
+
+    /* Functional colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    /* Chart colors */
+    --chart-1: 178 12% 55%;
+    --chart-2: 184 13% 39%;
+    --chart-3: 25 25% 85%;
+    --chart-4: 200 15% 20%;
+    --chart-5: 25 20% 92%;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 200 15% 20%;
+    --sidebar-primary: 178 12% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 184 13% 39%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 25 25% 85%;
+    --sidebar-ring: 178 12% 55%;
+
+    /* Border radius */
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Raleway", sans-serif;
+  }
+}
